@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'verdana';
+    background: #96858f;
+}
+header{
+    background: whitesmoke;
+    height: 695px;
+    position: relative;
+    overflow: hidden;
+}
+header .contenido{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 695px;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.textos-header{
+    width: 60%;
+    color: rgb(236, 226, 106);
+}
+.textos-header h1{
+    font-size: 60px;
+}
+.textos-header h2{
+    margin-bottom: 20px;
+}
+.imagen-header img{
+    width: 500px;
+    z-index: 10;
+    position: relative;
+}
+header .textos-header a{
+display: inline-block;
+padding: 10px 0;
+width: 150px;
+text-decoration: none;
+color: #96858f;
+border: 1px solid #96858f;
+text-align: center;
+border-radius: 3px;
+}
+header .textos-header a:hover{
+    background-color: #96858f;
+    color: whitesmoke;
+}
+
+.absolute{
+    background: #96858f;
+    opacity: 60%;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+}
+@media  screen and (max-width:830px) {
+    .imagen-header img{
+  
+        width: 400px;
+    }
+    
+}
+@media  screen and (max-width:725px) {
+    .textos-header{
+        width: 40%;
+    }
+
+    
+}
+@media  screen and (max-width:725px) {
+    .imagen-header img{
+        width: 350px;
+    }
+    
+}
+@media  screen and (max-width:600px) {
+   .contenido{
+       flex-direction: column;
+       justify-content: space-evenly;
+       padding: 20px 0;
+   }
+   .textos-header{
+    width: 100%;
+    text-align: center;
+}
+    
+}
