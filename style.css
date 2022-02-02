@@ -68,6 +68,7 @@ SWITCH
 
 .switch {
     top: 0;
+    margin: 5px;
     background: #343D5B;
     border-radius: 1000px;
     border: none;
@@ -113,6 +114,23 @@ SWITCH
     display: block;
     background: none;
     color: #fff;
+  }
+  footer{
+      display: flex;
+      justify-content: center;
+      background: wheat;
+      font-size: 10px;
+      padding: 5px;
+      font-weight: 300;
+      color: rgb(36, 35, 35);
+  }
+  footer:hover{
+      letter-spacing: 2px;
+  }
+  footer a{
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgb(36, 35, 35);
   }
   /*
   MODO OSCURO
